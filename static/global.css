@@ -1,0 +1,7 @@
+body {
+  --primary-color: cornflowerblue;
+  --secondary-color: linen;
+
+  font-family: sans-serif;
+  margin: 0;
+}
