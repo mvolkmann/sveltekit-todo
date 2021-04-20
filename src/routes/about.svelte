@@ -1,8 +1,8 @@
 <section>
   <p>
     This is a simple todo app developed to demonstrate using Svelte.<br />
-    It was first presented at the GOTO Aarhus conference,<br />
-    June 9-11 2021, in Copenhagen, Denmark.
+    It was first presented at the GOTOpia conference,<br />
+    April 20-21 2021, in Chicago, Illinois USA.
   </p>
 </section>
 

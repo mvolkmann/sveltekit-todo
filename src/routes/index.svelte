@@ -34,7 +34,7 @@
     {status}
     <button on:click={archiveCompleted}>Archive Completed</button>
   </div>
-  <form on:submit|preventDefault>
+  <form on:submit|preventDefault={addTodo}>
     <input
       type="text"
       size="30"
@@ -42,9 +42,9 @@
       placeholder="enter new todo here"
       bind:value={todoText}
     />
-    <button disabled={!todoText} on:click={addTodo}> Add </button>
+    <button disabled={!todoText}>Add</button>
   </form>
-  <ul class="unstyled">
+  <ul>
     {#each todos as todo}
       <Todo
         {todo}
@@ -65,7 +65,7 @@
   }
 
   /* This removes bullets from a bulleted list. */
-  ul.unstyled {
+  ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
