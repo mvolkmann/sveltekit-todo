@@ -11,12 +11,12 @@
     checked={todo.done}
     on:change={() => dispatch('toggleDone')}
   />
-  <span class={'done-' + todo.done}>{todo.text}</span>
+  <span class:done={todo.done}>{todo.text}</span>
   <button on:click={() => dispatch('delete')}>Delete</button>
 </li>
 
 <style>
-  .done-true {
+  .done {
     color: gray;
     text-decoration: line-through;
   }
